@@ -1,0 +1,27 @@
+DESCRIPTION
+-------------------------------------------------------------------------------
+A set of fonts based on artwiz/artwiz-aleczapka with full ISO-8859-1 support
+
+INSTALLATION
+-------------------------------------------------------------------------------
+Do the following (example for gentoo):
+
+	cd your_font_dir
+	tar xvjf artwiz-latin1.tgz
+	cd artwiz-latin1
+	fc-cache -fv ./
+	
+	Add this path to your /etc/xorg.conf config
+	FontPath "your_font_dir/artwiz-latin1"
+
+	and fontconfig config file (eg. /etc/fonts/local.conf)
+	<dir>your_font_dir/artwiz-latin1:unscaled</dir>
+
+	restart X
+
+Your installation may vary depending on your distro.
+
+CONTACT
+-------------------------------------------------------------------------------
+	ld <dot> fifty <at> gmail <dot> com
+	http://sourceforge.net/projects/artwiz-latin1/
