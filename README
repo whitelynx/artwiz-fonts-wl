@@ -25,7 +25,7 @@ NOTES
 
 	* kates-terminal, edges-terminal, lime-terminal, fkp-terminal, smoothansi-terminal
 
-		These are the original artwiz-aleckzapka's font's (without the -terminal suffix),
+		These are the original artwiz-aleczapka's font's (without the -terminal suffix),
 		i've included them in this package  so you can use Midnight Commander or another
 		program that uses special terminal characters like, lines and corners.
 
