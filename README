@@ -1,9 +1,11 @@
-DESCRIPTION
 -------------------------------------------------------------------------------
+DESCRIPTION
+
 A set of fonts based on artwiz/artwiz-aleczapka with full ISO-8859-1 support
 
-INSTALLATION
 -------------------------------------------------------------------------------
+INSTALLATION
+
 Do the following (example for gentoo):
 
 	cd your_font_dir
@@ -20,9 +22,21 @@ Do the following (example for gentoo):
 	restart X
 
 Your installation may vary depending on your distro.
-
-CONTACT
 -------------------------------------------------------------------------------
+GTK MENUS
+
+You might want to use these fonts in GTK apps menus and other widgets
+(screenshot: http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png)
+
+Edit ~/.gtkrc.mine, and add:
+gtk-font-name = "snap 10"
+
+and ~/.gtkrc-2.0 must have:
+include "/home/serj/.gtkrc.mine"
+
+-------------------------------------------------------------------------------
+CONTACT
+
 	email: ld <dot> fifty <at> gmail <dot> com
 	irc: ld50 at freenode, and lethal at ptnet
 	http://sourceforge.net/projects/artwiz-latin1/
