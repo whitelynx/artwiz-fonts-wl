@@ -1,6 +1,8 @@
 1.0_rc1 to 1.0_rc2
 -----------------
 
+* AUTHORS: Updated authors.
+
 * README: Added instructions on how to enable
 bitmap fonts in fontconfig.
 
