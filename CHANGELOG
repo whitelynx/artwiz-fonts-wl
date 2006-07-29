@@ -1,4 +1,8 @@
 1.0_rc1 to 1.0_rc2
 -----------------
+
+* README: Added instructions on how to enable
+bitmap fonts in fontconfig.
+
 * README: Added instructions on how to change
 the font in gtk menus.

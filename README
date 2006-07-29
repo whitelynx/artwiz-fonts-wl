@@ -1,38 +1,58 @@
 -------------------------------------------------------------------------------
 DESCRIPTION
 
-A set of fonts based on artwiz/artwiz-aleczapka with full ISO-8859-1 support
+A set of fonts based on artwiz/artwiz-aleczapka with full ISO-8859-1 support.
 
 -------------------------------------------------------------------------------
 INSTALLATION
 
-Do the following (example for gentoo):
+Do the following:
 
-	cd your_font_dir
-	tar xvjf artwiz-latin1.tgz
-	cd artwiz-latin1
-	fc-cache -fv ./
+	* Copy the fonts to your font dir:
+
+		cd your_font_dir
+		tar xvjf artwiz-latin1.tgz
+		cd artwiz-latin1
+		fc-cache -fv ./
+
+	* Add this path to your /etc/xorg.conf config:
+
+		FontPath "your_font_dir/artwiz-latin1"
+
+	* Add this to your fontconfig config file
+	  (eg. /etc/fonts/local.conf):
 	
-	Add this path to your /etc/xorg.conf config
-	FontPath "your_font_dir/artwiz-latin1"
+		<dir>your_font_dir/artwiz-latin1:unscaled</dir>
 
-	and fontconfig config file (eg. /etc/fonts/local.conf)
-	<dir>your_font_dir/artwiz-latin1:unscaled</dir>
 
-	restart X
+	* If you use ubuntu or other distro that disables bitmap fonts
+	  from fontconfig:
 
-Your installation may vary depending on your distro.
+		rm /etc/fonts/conf.d/30-debconf-no-bitmaps.conf
+
+
+	* restart X or run:
+		xset +fp your_complete_font_dir_path/artwiz-latin1
+
+
+	* test it
+
+		xlsfonts | grep snap
+		fc-list | grep snap
+	
+
+	NOTE: Your installation may vary depending on your distro.
 -------------------------------------------------------------------------------
 GTK MENUS
 
-You might want to use these fonts in GTK apps menus and other widgets
-(screenshot: http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png)
+	You might want to use these fonts in GTK apps menus and other widgets
+	(screenshot: http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png)
 
-Edit ~/.gtkrc.mine, and add:
-gtk-font-name = "snap 10"
+	Edit ~/.gtkrc.mine, and add:
+	gtk-font-name = "snap 10"
 
-and ~/.gtkrc-2.0 must have:
-include "/home/serj/.gtkrc.mine"
+	and ~/.gtkrc-2.0 must have:
+	include "/home/serj/.gtkrc.mine"
 
 -------------------------------------------------------------------------------
 CONTACT
