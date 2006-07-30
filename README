@@ -52,7 +52,9 @@ GTK MENUS
 	gtk-font-name = "snap 10"
 
 	and ~/.gtkrc-2.0 must have:
-	include "/home/serj/.gtkrc.mine"
+	include "/home/your_home/.gtkrc.mine"
+
+	(your_home is just an example)
 
 -------------------------------------------------------------------------------
 CONTACT
