@@ -18,7 +18,7 @@ SPACING "m"
 AVERAGE_WIDTH 50
 CHARSET_REGISTRY "ISO8859"
 CHARSET_ENCODING "1"
-COPYRIGHT "artwiz, fixed by aleczapka, latin1 chars by Sergio Martins"
+COPYRIGHT "artwiz, latin1 and bold chars by Sergio Martins"
 FACE_NAME "lime"
 WEIGHT 10
 RESOLUTION 99

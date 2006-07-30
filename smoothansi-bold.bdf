@@ -25,7 +25,7 @@ CHARSET_REGISTRY "ISO8859"
 CHARSET_ENCODING "1"
 _XMBDFED_INFO "Edited with xmbdfed 4.7."
 _GBDFED_INFO "Edited with gbdfed 1.0."
-COPYRIGHT "Daniel Erat, fixed by aleczapka, latin1 chars by Sergio Martins"
+COPYRIGHT "Daniel Erat, latin1 and bold chars by Sergio Martins"
 DEFAULT_CHAR 63
 ENDPROPERTIES
 CHARS 210
