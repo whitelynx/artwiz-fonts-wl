@@ -1,5 +1,14 @@
-1.0_rc1 to 1.0_rc2
+1.0_rc2 to 1.0_rc3
 -----------------
+* smoothansi.bdf: Corrected glyph 0xE4 and 0xEB
+
+* glisp-bold.bdf: Now glisp-bold no longer appears in
+  font selectors instead, choose bold in the font style options.
+
+* Added snap-bold font.
+
+1.0_rc1 to 1.0_rc2
+------------------
 
 * AUTHORS: Updated authors.
 
