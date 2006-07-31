@@ -1,11 +1,16 @@
 1.0_rc2 to 1.0_rc3
 -----------------
+
+* Changed glyphs 0xE5 and 0xC5 of almost all fonts.
+
+* All fonts are now gzipped.
+
 * smoothansi.bdf: Corrected glyph 0xE4 and 0xEB
 
 * glisp-bold.bdf: Now glisp-bold no longer appears in
   font selectors instead, choose bold in the font style options.
 
-* Added snap-bold font.
+* Added a bold version of each font, except fkp.
 
 1.0_rc1 to 1.0_rc2
 ------------------
