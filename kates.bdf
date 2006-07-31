@@ -26,7 +26,7 @@ CHARSET_ENCODING "1"
 COPYRIGHT "artwiz, fixed by aleczapka, latin1 chars by Sergio Martins"
 _XMBDFED_INFO "Edited with xmbdfed 4.7."
 DEFAULT_CHAR 63
-_GBDFED_INFO "Edited with gbdfed 1.0."
+_GBDFED_INFO "Edited with gbdfed 1.1."
 ENDPROPERTIES
 CHARS 210
 STARTCHAR char0
@@ -1748,8 +1748,8 @@ SWIDTH 480 0
 DWIDTH 7 0
 BBX 6 2 0 7
 BITMAP
-98
 64
+98
 ENDCHAR
 STARTCHAR char33
 ENCODING 161
