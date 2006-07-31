@@ -1,7 +1,10 @@
 -------------------------------------------------------------------------------
 DESCRIPTION
 
-A set of fonts based on artwiz/artwiz-aleczapka with full ISO-8859-1 support.
+A set of fonts based on artwiz/artwiz-aleczapka with:
+
+	* Full ISO-8859-1 support (german, portuguese, swedish etc. characters)
+	* Bold version of each font.
 
 -------------------------------------------------------------------------------
 INSTALLATION
