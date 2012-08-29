@@ -1,4 +1,4 @@
-DESCRIPTION
+Description
 -----------
 
 A set of fonts based on artwiz/artwiz-aleczapka with:
@@ -7,7 +7,7 @@ A set of fonts based on artwiz/artwiz-aleczapka with:
  * Bold version of each font.
 
 
-BUILDING
+Building
 --------
 
 Building is rather straightforward:
@@ -19,7 +19,7 @@ This will create a `build` directory, and create generated `.pcf` files there.
 If you wish to clean up the build output, you can run `make clean`.
 
 
-INSTALLATION
+Installation
 ------------
 
 Do the following:
@@ -64,7 +64,7 @@ Do the following:
 NOTE: Your installation may vary depending on your distro.
 
 
-GTK MENUS
+GTK Menus
 ---------
 
 You might want to use these fonts in GTK apps menus and other widgets.
@@ -81,9 +81,9 @@ and ensure that `~/.gtkrc-2.0` contains:
 (your_home is just an example)
 
 
-CONTACT
+Contact
 -------
 
-email: ld <dot> fifty <at> gmail <dot> com
-irc: ld50 at freenode, and lethal at ptnet
-http://sourceforge.net/projects/artwiz-latin1/
+ * email: ld <dot> fifty <at> gmail <dot> com
+ * irc: ld50 at freenode, and lethal at ptnet
+ * http://sourceforge.net/projects/artwiz-latin1/
