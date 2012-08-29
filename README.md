@@ -12,8 +12,9 @@ BUILDING
 
 Building is rather straightforward:
 
-	cd build
 	make
+
+This will create a `build` directory, and create generated `.pcf` files there.
 
 If you wish to clean up the build output, you can run `make clean`.
 
@@ -42,7 +43,7 @@ Do the following:
 		<dir>your_font_dir/artwiz-latin1:unscaled</dir>
 
 
- * If you use ubuntu or other distro that disables bitmap fonts from fontconfig:
+ * If you use Ubuntu or another distro that disables bitmap fonts in fontconfig:
 
 		rm /etc/fonts/conf.d/30-debconf-no-bitmaps.conf
 
@@ -66,8 +67,8 @@ NOTE: Your installation may vary depending on your distro.
 GTK MENUS
 ---------
 
-You might want to use these fonts in GTK apps menus and other widgets
-(screenshot: http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png)
+You might want to use these fonts in GTK apps menus and other widgets.
+([screenshot](http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png))
 
 Edit `~/.gtkrc.mine`, and add:
 
