@@ -70,54 +70,40 @@ Do the following:
 
  * Update the fontconfig cache:
 
-	```bash
-	fc-cache -fv /PATH/TO/artwiz-fonts-wl
-	```
+		fc-cache -fv /PATH/TO/artwiz-fonts-wl
 
  * Create a new file `/etc/X11/xorg.conf.d/40-x-fonts.conf` with the contents:
 
-	```conf
-	Section "Files"
-		FontPath "/PATH/TO/artwiz-fonts-wl"
-	EndSection
-	```
+		Section "Files"
+			FontPath "/PATH/TO/artwiz-fonts-wl"
+		EndSection
 
 
  * Add this to your fontconfig config file (eg. `/etc/fonts/local.conf`):
 
-	```xml
-	<dir>/PATH/TO/artwiz-fonts-wl:unscaled</dir>
-	```
+		<dir>/PATH/TO/artwiz-fonts-wl:unscaled</dir>
 
 
  * If you use Ubuntu or another distro that disables bitmap fonts in fontconfig by default:
 
-	```bash
-	rm /etc/fonts/conf.d/30-debconf-no-bitmaps.conf
-	```
+		rm /etc/fonts/conf.d/30-debconf-no-bitmaps.conf
 
 	On Arch Linux, this file is named `/etc/fonts/conf.d/70-no-bitmaps.conf`, and the file
 	`/etc/fonts/conf.avail/70-yes-bitmaps.conf` should be linked in its place:
 
-	```bash
-	rm /etc/fonts/conf.d/70-no-bitmaps.conf
-	ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
-	```
+		rm /etc/fonts/conf.d/70-no-bitmaps.conf
+		ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
 
 
  * Either restart X, or run:
 
-	```
-	xset +fp /PATH/TO/artwiz-fonts-wl
-	```
+		xset +fp /PATH/TO/artwiz-fonts-wl
 
 
  * Test it:
 
-	```
-	xlsfonts | grep drift
-	fc-list | grep drift
-	```
+		xlsfonts | grep drift
+		fc-list | grep drift
 
 
 NOTE: Your installation may vary depending on your distro.
