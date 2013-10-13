@@ -34,7 +34,8 @@ distclean:
 	rm -r $(OUTDIR)
 
 install: $(outputs)
-	install -m644 -t $(DESTDIR)/$(XORGCONFDIR)/40-x-fonts.conf $(OUTDIR)/x-fonts.conf
+	install -m755 -d $(DESTDIR)/$(XORGCONFDIR)
+	install -m644 $(DESTDIR)/$(XORGCONFDIR)/40-x-fonts.conf $(OUTDIR)/x-fonts.conf
 	install -m755 -d $(DESTDIR)/$(TARGET)
 	install -m644 -t $(DESTDIR)/$(TARGET) $(outputs)
 
