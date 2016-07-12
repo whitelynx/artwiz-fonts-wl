@@ -20,7 +20,7 @@ VPATH = ..
 font_outputs := $(patsubst %.bdf,$(OUTDIR)/%.pcf,$(wildcard *.bdf))
 fontdir_outputs := fonts.alias fonts.dir fonts.scale
 fontdir_outputs := $(patsubst %,$(OUTDIR)/%,$(fontdir_outputs))
-outputs := $(font_outputs) $(fontdir_outputs) $(OUTDIR)/x-fonts.conf
+outputs := $(font_outputs) $(fontdir_outputs) $(OUTDIR)/x11-artwiz-fonts-wl.conf
 
 
 .PHONY: all clean distclean install
@@ -35,7 +35,7 @@ distclean:
 
 install: $(outputs)
 	install -m755 -d $(DESTDIR)/$(XORGCONFDIR)
-	install -m644 $(OUTDIR)/x-fonts.conf $(DESTDIR)/$(XORGCONFDIR)/40-x-fonts.conf
+	install -m644 $(OUTDIR)/x11-artwiz-fonts-wl.conf $(DESTDIR)/$(XORGCONFDIR)/40-artwiz-fonts-wl.conf
 	install -m755 -d $(DESTDIR)/$(TARGET)
 	install -m644 -t $(DESTDIR)/$(TARGET) $(outputs)
 
@@ -49,7 +49,7 @@ $(OUTDIR)/fonts.scale: $(OUTDIR)/fonts.alias
 $(OUTDIR)/fonts.dir: $(OUTDIR)/fonts.alias $(OUTDIR)/fonts.scale
 	mkfontdir $(OUTDIR)
 
-$(OUTDIR)/x-fonts.conf: templates/x-fonts.conf
+$(OUTDIR)/x11-artwiz-fonts-wl.conf: templates/x11-artwiz-fonts-wl.conf
 	sed 's@%(TARGET)@'$(TARGET)'@g' $< > $@
 
 $(OUTDIR):
