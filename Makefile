@@ -37,7 +37,7 @@ install: $(outputs)
 	install -m755 -d $(DESTDIR)/$(XORGCONFDIR)
 	install -m644 $(OUTDIR)/x11-artwiz-fonts-wl.conf $(DESTDIR)/$(XORGCONFDIR)/40-artwiz-fonts-wl.conf
 	install -m755 -d $(DESTDIR)/$(TARGET)
-	install -m644 -t $(DESTDIR)/$(TARGET) $(outputs)
+	install -m644 -t $(DESTDIR)/$(TARGET) $(font_outputs) $(fontdir_outputs)
 
 
 $(OUTDIR)/fonts.alias: fonts.alias
