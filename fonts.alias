@@ -35,8 +35,8 @@
 -artwiz-aqui-medium-r-normal--11-110-75-75-p-90-ISO10646-1 -artwiz-aqui-medium-r-normal--11-110-75-75-p-90-ISO8859-1
 -artwiz-cure-medium-r-normal--11-110-75-75-p-90-ISO10646-1 -artwiz-cure-medium-r-normal--11-110-75-75-p-90-ISO8859-1
 -artwiz-cure-bold-r-bold--11-110-75-75-p-90-ISO10646-1 -artwiz-cure-bold-r-bold--11-110-75-75-p-90-iso8859-1
--artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO10646-1 -artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO8859-1
--artwiz-drift-bold-r-bold--10-100-75-75-n-70-ISO10646-1 -artwiz-drift-bold-r-bold--10-100-75-75-n-70-iso8859-1
+!-artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO10646-1 -artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO8859-1
+!-artwiz-drift-bold-r-bold--10-100-75-75-n-70-ISO10646-1 -artwiz-drift-bold-r-bold--10-100-75-75-n-70-iso8859-1
 -artwiz-edges-medium-r-normal--10-100-75-75-m-50-ISO10646-1  -artwiz-edges-medium-r-normal--10-100-75-75-m-50-ISO8859-1
 -artwiz-edges-bold-r-bold--10-100-75-75-m-50-ISO10646-1 -artwiz-edges-bold-r-bold--10-100-75-75-m-50-iso8859-1
 -artwiz-fkp-medium-r-normal--16-160-75-75-m-80-ISO10646-1 -artwiz-fkp-medium-r-normal--16-160-75-75-m-80-ISO8859-1
@@ -63,7 +63,8 @@
 anorexia -artwiz-anorexia-medium-r-normal--11-110-75-75-p-90-ISO8859-1
 aqui -artwiz-aqui-medium-r-normal--11-110-75-75-p-90-ISO8859-1
 cure -artwiz-cure-medium-r-normal--11-110-75-75-p-90-ISO8859-1
-drift -artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO8859-1
+!drift -artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO8859-1
+drift -artwiz-drift-medium-r-normal--10-100-75-75-n-60-ISO10646-1
 edges  -artwiz-edges-medium-r-normal--10-100-75-75-m-50-ISO8859-1
 fkp -artwiz-fkp-medium-r-normal--16-160-75-75-m-80-ISO8859-1
 gelly -artwiz-gelly-medium-r-normal--10-110-75-75-p-90-ISO8859-1
