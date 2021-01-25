@@ -19,6 +19,16 @@ A set of modified [artwiz fonts][] ([original site][]) based on [artwiz-aleczapk
 [Unicode]: https://en.wikipedia.org/wiki/Unicode
 
 
+Prerequisites
+-------------
+
+For OTF output:
+- [Fontforge](https://fontforge.org/en-US/)
+
+For PCF (legacy) output:
+- [bdftopcf](https://www.x.org/releases/X11R7.7/doc/man/man1/bdftopcf.1.xhtml)
+
+
 Building
 --------
 
@@ -28,7 +38,9 @@ Building is rather straightforward:
 make
 ```
 
-This will create a `build` directory, and create generated `.pcf` files there.
+This will create a `build` directory, and create generated `.pcf` and `.otf` files there.
+
+You can opt to only generate either `.pcf` or `.otf` files by running `make pcf` or `make otf`.
 
 If you wish to clean up the build output, you can run `make clean`.
 
@@ -36,17 +48,35 @@ If you wish to clean up the build output, you can run `make clean`.
 Installation
 ------------
 
-Installing is also straightforward:
+You have two options for installation: either installing the fonts system-wide (the default) or installing them in your home directory. (which doesn't require `root` access)
+
+### System-wide installation
 
 ```bash
 sudo make install
 ```
 
 This will install the fonts to `/usr/share/fonts/artwiz-fonts-wl`, and create the Xorg config file
-`/etc/X11/xorg.conf.d/40-x-fonts.conf` to enable them. You may specify values for the `DESTDIR`, `SYSCONFDIR`,
-`PREFIX`, `FONTDIR`, or `TARGET` variables after `make` in order to override the default paths. (defaults:
-`DESTDIR=/`, `SYSCONFDIR=/etc`, `PREFIX=/usr`, `FONTDIR=$(PREFIX)/share/fonts`, `TARGET=$(FONTDIR)/artwiz-fonts-wl`)
+`/etc/X11/xorg.conf.d/40-x-fonts.conf` to enable them. It will also run `fc-cache` to update the system fontconfig cache.
 
+You may specify values for the `DESTDIR`, `SYSCONFDIR`, `PREFIX`, `FONTDIR`, or `TARGET` variables after `make` in order to override the default paths.
+(defaults: `DESTDIR=/`, `SYSCONFDIR=/etc`, `PREFIX=/usr`, `FONTDIR=$(PREFIX)/share/fonts`, `TARGET=$(FONTDIR)/artwiz-fonts-wl`)
+
+You can also opt to only install either `.pcf` or `.otf` fonts using `sudo make install-pcf` or `sudo make install-otf`.
+
+
+### Home directory installation
+
+Currently, only the OTF variant can be installed in your home directory.
+
+```bash
+make install-user
+```
+
+This will install the `.otf` fonts into `~/.fonts/artwiz-fonts-wl/`, and then regenerate the fontconfig cache for the current user.
+
+
+### Fontconfig configuration
 
 If you use Ubuntu or another distro that disables bitmap fonts in fontconfig by default, you'll have to re-enable them:
 
