@@ -10,7 +10,7 @@ A set of modified [artwiz fonts][] ([original site][]) based on [artwiz-aleczapk
     box corrections)
 
 [artwiz fonts]: https://en.wikipedia.org/wiki/Artwiz_fonts
-[original site]: http://artwiz.artramp.org/index.phtml?section=art_fonts
+[original site]: https://web.archive.org/web/20011215030159/http://artwiz.artramp.org/index.phtml?section=files&browse=fonts
 [artwiz-aleczapka]: http://artwizaleczapka.sourceforge.net/
 [artwiz-latin1]: http://sourceforge.net/projects/artwiz-latin1/
 [ISO/IEC 8859-1]: https://en.wikipedia.org/wiki/ISO_8859-1
@@ -112,7 +112,7 @@ NOTE: Your installation may vary depending on your distro.
 GTK Menus
 ---------
 
-You might want to use these fonts in GTK apps menus and other widgets.
+You might want to use these fonts in GTK 2.x apps menus and other widgets.
 ([screenshot](http://artwiz-latin1.sourceforge.net/screenshots/snap-gtk.png))
 
 Edit `~/.gtkrc.mine`, and add:
@@ -128,3 +128,16 @@ include "/home/your_home/.gtkrc.mine"
 ```
 
 (`your_home` is just an example)
+
+
+License
+-------
+
+artwiz-fonts-wl is released under the terms of [the GNU General Public License
+(GPL) version 2](https://opensource.org/licenses/GPL-2.0). Read file
+[COPYING]() for detailed info.
+
+The Artwiz fonts were originally released under the [ZIWTRA B00GIE LICENSE
+(ZBL)][ZBL].
+
+[ZBL]: https://web.archive.org/web/20011214092005/http://artwiz.artramp.org/LICENSE)
