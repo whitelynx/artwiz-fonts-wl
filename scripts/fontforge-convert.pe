@@ -1,2 +1,2 @@
 Open($1)
-Generate($2, "ttf")
+Generate($2, "otf")
