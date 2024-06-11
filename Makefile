@@ -88,5 +88,5 @@ $(OUTDIR):
 $(OUTDIR)/%.pcf: %.bdf $(OUTDIR)
 	$(BDFTOPCF) $(if $(findstring $(notdir $<),$(monospace)),$(BDFTOPCF_TERMINAL_FONT)) -o $@ $<
 
-$(OUTDIR)/%.otf: %.bdf
+$(OUTDIR)/%.otf: %.bdf $(OUTDIR)
 	$(FONTFORGE) -script scripts/fontforge-convert.pe $< $@
