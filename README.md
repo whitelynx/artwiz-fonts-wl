@@ -9,7 +9,7 @@ A set of modified [artwiz fonts][] ([original site][]) based on [artwiz-aleczapk
  * A bold variant of each font. (based on artwiz-latin1's bold fonts, but with some fixes; most notably, font bounding
     box corrections)
 
-[artwiz fonts]: https://en.wikipedia.org/wiki/Artwiz_fonts
+[artwiz fonts]: https://web.archive.org/web/20201021124738/https://en.wikipedia.org/wiki/Artwiz_fonts
 [original site]: https://web.archive.org/web/20011215030159/http://artwiz.artramp.org/index.phtml?section=files&browse=fonts
 [artwiz-aleczapka]: http://artwizaleczapka.sourceforge.net/
 [artwiz-latin1]: http://sourceforge.net/projects/artwiz-latin1/
