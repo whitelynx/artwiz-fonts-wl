@@ -1,3 +1,7 @@
+* Build system improvements, character width and bounding box fixes, Unicode
+improvements, airline/powerline charaters, OTF output by David H. Bronke
+<whitelynx at gmail dot com>
+
 * latin1 encodings and bold chars by Sergio Martins
 <ld dot fifty at gmail dot com>; ld50@freenode; lethal@ptnet
 
