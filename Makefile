@@ -6,7 +6,7 @@ XORGCONFDIR ?= $(SYSCONFDIR)/X11/xorg.conf.d
 PREFIX ?= /usr
 FONTDIR ?= $(PREFIX)/share/fonts
 TARGET ?= $(FONTDIR)/artwiz-fonts-wl
-USER_FONTDIR ?= $(HOME)/.fonts
+USER_FONTDIR ?= $(HOME)/.local/share/fonts
 USER_TARGET ?= $(USER_FONTDIR)/artwiz-fonts-wl
 
 BDFTOPCF ?= bdftopcf
